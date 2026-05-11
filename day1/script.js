@@ -20,56 +20,49 @@
 // solution 
 
 
-// we have to solve 2nd one - find smallest 
-
-// so here smallest value is 1 lets check its working or not ??
-
-// yes its working fine. 1 is coming 
-
-// thankyou for watching with us keep learning 
-
-// function findSmallest(arr){
-//     let smallest = Infinity;
-//     for(let i = 0 ; i<arr.length; i++){
-//          if(arr[i] < smallest){
-//             smallest = arr[i];
-//          }
-//     }
-//     return smallest;
-// }
-
-// const result = findSmallest(arr);
-// console.log(result);
-
-// let arr =  [1, 4, 3, 56, 88, 36, 906];
-
-// function findSecondLargest(arr){
-//     let firstLarget = -Infinity;
-//     let secondLarget = -Infinity;
-//     for(let i =  0 ; i<arr.length ; i++){
-//            if(arr[i]> firstLarget){
-//             secondLarget = firstLarget
-//             firstLarget = arr[i]
-//            } else if(arr[i]> secondLarget){
-//             secondLarget = arr[i]
-//            }
 
 
-//     }
-//     return secondLarget;
-// }
+function findSmallest(arr){
+    let smallest = Infinity;
+    for(let i = 0 ; i<arr.length; i++){
+         if(arr[i] < smallest){
+            smallest = arr[i];
+         }
+    }
+    return smallest;
+}
 
-// const res = findSecondLargest(arr);
-// console.log(res);
+const result1 = findSmallest(arr);
+console.log(result1);
 
-// for(let i = 0 ; i<3 ; i++){
-//     for(let j = 0 ; j<3 ; j++){
-//         console.log('i',  i  + ' '  +  'j', j);
-//     }
-// }
+let arr =  [1, 4, 3, 56, 88, 36, 906];
 
-// for(let i = 0; i<3; i++){
-//     for(let j = 0; j<i ; j++){
-//         console.log("I" , i + " " ,  "j" , j)
-//     }
-// }
+function findLargest(arr){
+    let largest = -Infinity;
+    for(let i = 0 ; i<arr.length; i++){
+        if(arr[i]> largest){
+            largest = arr[i]
+        }
+    }
+    return largest
+}
+
+const result2 = findLargest(arr);
+console.log(result2);
+
+function findSecondLargest(arr){
+    let firstLarget = -Infinity;
+    let secondLarget = -Infinity;
+    for(let i =  0 ; i<arr.length ; i++){
+           if(arr[i]> firstLarget){
+            secondLarget = firstLarget
+            firstLarget = arr[i]
+           } else if(arr[i]> secondLarget){
+            secondLarget = arr[i]
+           }
+    }
+    return secondLarget;
+}
+const result3 = findSecondLargest(arr);
+console.log(result3);
+
