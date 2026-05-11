@@ -21,6 +21,7 @@
 
 
 
+let arr =  [1, 4, 3, 56, 88, 36, 906];
 
 function findSmallest(arr){
     let smallest = Infinity;
@@ -35,7 +36,6 @@ function findSmallest(arr){
 const result1 = findSmallest(arr);
 console.log(result1);
 
-let arr =  [1, 4, 3, 56, 88, 36, 906];
 
 function findLargest(arr){
     let largest = -Infinity;
